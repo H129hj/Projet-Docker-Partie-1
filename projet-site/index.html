@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boulangerie du Cours - Aix-en-Provence</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #fdf6ec;
+      color: #3b2a1a;
+    }
+    header {
+      background-color: #8b5a2b;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2em;
+    }
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h2 {
+      color: #8b5a2b;
+      border-bottom: 2px solid #e0c9a6;
+      padding-bottom: 5px;
+    }
+    .produits {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .produit {
+      flex: 1 1 200px;
+      background-color: white;
+      border: 1px solid #e0c9a6;
+      border-radius: 8px;
+      padding: 15px;
+    }
+    .produit h3 {
+      margin-top: 0;
+    }
+    table {
+      border-collapse: collapse;
+    }
+    td {
+      padding: 4px 15px 4px 0;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+      color: #7a6650;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Boulangerie du Cours</h1>
+    <p>Pains, viennoiseries et pâtisseries faits maison depuis 1998</p>
+  </header>
+
+  <main>
+    <h2>Nos produits</h2>
+    <div class="produits">
+      <div class="produit">
+        <h3>Pains</h3>
+        <p>Baguette tradition, pain de campagne, pain aux céréales.</p>
+      </div>
+      <div class="produit">
+        <h3>Viennoiseries</h3>
+        <p>Croissants, pains au chocolat, chaussons aux pommes.</p>
+      </div>
+      <div class="produit">
+        <h3>Pâtisseries</h3>
+        <p>Tartes aux fruits, éclairs, calissons d'Aix.</p>
+      </div>
+    </div>
+
+    <h2>Horaires</h2>
+    <table>
+      <tr><td>Mardi - Samedi</td><td>6h30 - 19h30</td></tr>
+      <tr><td>Dimanche</td><td>7h00 - 13h00</td></tr>
+      <tr><td>Lundi</td><td>Fermé</td></tr>
+    </table>
+
+    <h2>Nous trouver</h2>
+    <p>Cours Mirabeau, 13100 Aix-en-Provence<br>Tél : 04 65 71 12 34</p>
+  </main>
+
+  <footer>
+    Boulangerie du Cours - site hébergé avec nginx dans un conteneur Docker
+  </footer>
+</body>
+</html>
